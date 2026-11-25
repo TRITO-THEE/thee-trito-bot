@@ -19,7 +19,7 @@ Verify downloaded file integrity in PowerShell before running:
 ```powershell
 Get-FileHash .\thee_trito_bot.exe -Algorithm SHA256
 # Expected SHA-256:
-# 2e96202aa8c01e4ed6c52d73f0db3134548e047466f57134442f81546a49e430
+# 6744299b80bcdfcd16e93cec0996149c83dccb191b4982f3b8069171c16be1ca
 ```
 
 ---
