@@ -12,20 +12,22 @@ Windows desktop auto-coding bot for natural human-paced typing and automated pro
 
 | Asset | Version | Size | Download |
 |---|---|---|---|
-| `thee_trito_bot_Setup.exe` | **v1.4.0** | 64.12 MB | [**Download Windows Setup Wizard**](https://github.com/TRITO-THEE/thee-trito-bot/releases/download/v1.4.0/thee_trito_bot_Setup.exe) |
+| `thee_trito_bot_Setup.exe` | **v1.5.0** | 64.14 MB | [**Download Windows Setup Wizard**](https://github.com/TRITO-THEE/thee-trito-bot/releases/download/v1.5.0/thee_trito_bot_Setup.exe) |
 
 ### Integrity Verification (SHA-256)
 Verify downloaded installer integrity in PowerShell before running:
 ```powershell
 Get-FileHash .\thee_trito_bot_Setup.exe -Algorithm SHA256
 # Expected SHA-256:
-# 5c71336e0bbdf0d1d4680208200689bc4ebe067cb1d13bc9fa18ede2ca35dd7d
+# db1dba3059946a31b68cf85a62f1869d145bc3f923f8458c6650621efa853031
 ```
 
 ---
 
 ## Key Features
 
+- **Smart Check-First PC Setup Wizard & 1-Click VS Code Installer**: Verifies runtime dependencies, `%APPDATA%` storage, and VS Code before offering any action—auto-fixing session/User PATH if needed, or installing VS Code silently (WinGet + direct Microsoft installer fallback) when missing.
+- **Automatic VS Code Launch & Focus**: Clicking **Start Build**, **Resume Saved Session**, or **Start Typing** automatically launches and focuses VS Code (opening your target workspace cleanly) if it is not open yet.
 - **Built-In Starter Projects & Snippets Library**: Start coding in VS Code immediately using 4 multi-file built-in projects or single-file starter scripts without needing your own repository.
 - **Built-In Continuous Loop**: Built-In Projects and Built-In Snippets automatically clear only what they typed in VS Code and restart from the beginning continuously until you press `F9`, `Esc`, or click **Stop** (custom user folders never auto-delete).
 - **Windows Setup Wizard (`thee_trito_bot_Setup.exe`)**: Dark-mode Inno Setup installer with optional Desktop shortcut, Start with Windows option, Start Menu entry, and clean Add/Remove Programs uninstaller.
