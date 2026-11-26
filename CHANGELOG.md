@@ -2,6 +2,12 @@
 
 All notable changes to **thee_trito bot** will be documented in this file.
 
+## [1.5.0] - 2026-11-26
+
+### Added
+- **Smart Check-First PC Setup Wizard & 1-Click VS Code Auto-Installer**: Verifies bundled `PySide6`, `pynput`, `pyautogui`, `pywinctl`, `wakepy`, `%APPDATA%` storage, existing VS Code installs, and `code --version` before any action. Never offers reinstallation when VS Code already exists, adds 1-click **Fix VS Code PATH** (`HKCU\Environment`), and supports WinGet + official Microsoft direct download fallback (`VSCodeUserSetup.exe`) when VS Code is genuinely missing.
+- **Automatic VS Code Launch & Focus on Start**: Clicking **Start Build**, **Resume Saved Session**, or **Start Typing** automatically launches VS Code (`code --disable-workspace-trust -n <target_dir>` or `code -n`) and focuses it if not open yet, or opens the Setup Wizard automatically if VS Code is missing.
+
 ## [1.4.0] - 2026-11-26
 
 ### Added
