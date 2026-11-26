@@ -2,26 +2,29 @@
 
 All notable changes to **thee_trito bot** will be documented in this file.
 
+## [1.3.2] - 2026-11-26
+
+### Added
+- **Windows Setup Wizard (`thee_trito_bot_Setup.exe`)**: Inno Setup 7 installer (`WizardStyle=modern dynamic`, non-admin per-user install, Desktop shortcut task, Start with Windows task, Start Menu integration, and clean Add/Remove Programs uninstaller).
+- **Fast `--onedir` App Launch**: Switched packaging from `--onefile` to `--onedir` for near-instantaneous startup.
+- **Persistent `%APPDATA%` Config Storage**: Moved frozen config storage to `%APPDATA%\thee_trito_bot\config` with automatic non-destructive migration from legacy portable `config/` folders.
+- **Hide to System Tray UX**: Added `Hide to Tray` sidebar button, `Hide to System Tray on Close` preference toggle (default ON), single/double-click restore, one-time tray notice, and clean `Quit thee_trito bot` shutdown.
+- **Installer-Aware Silent Self-Updater**: `check_for_update()` prefers `*_Setup.exe` assets (`is_installer=True`) and `apply_update_and_restart()` runs silent in-place upgrades and relaunches automatically.
+
 ## [1.3.1] - 2026-11-25
 
 ### Added
-- **3-State Feedback on "Check for Updates"**:
-  - Distinguishes clearly between "Update Available", "Up to Date", and "Offline / Network Error".
-  - Button switches to `"Checking..."` and temporarily disables while background thread checks GitHub.
-  - Informative dark-graphite dialogs for up-to-date and offline states, plus 1-click update prompt when an update is available.
-- **Silent Startup Checks**: Automatic startup checks run silently in the background and only present the notification banner if a newer release actually exists.
-- **3-State Verification Test Suite**: Automated unit tests for all 3 updater states.
+- **3-State Feedback on "Check for Updates"**: Distinguishes clearly between "Update Available", "Up to Date", and "Offline / Network Error" with `"Checking..."` button feedback and informative dialogs.
+- **Silent Startup Checks**: Automatic startup checks stay silent unless a newer release is available.
 
 ## [1.3.0] - 2026-11-25
 
 ### Added
-- **Solid Dark-Graphite PySide6 Qt6 Desktop UI**: High-performance native Qt6 interface with `Fusion` styling, zero translucency/glass latency, and an independent floating real-time QWERTY HUD.
-- **Built-in 1-Click Auto-Updater**: Automatic background release checks against GitHub Releases API with notification banners and detached process executable replacement.
-- **Self-Healing VS Code Editor & Cursor-Anchor Guard**: Actively monitors cursor drift, focus loss, and stray keystrokes; self-heals brackets and indentation automatically.
-- **Visual VS Code Explorer Mode**: Smooth human-like mouse movement (`pyautogui.easeOutQuad`) to the Explorer sidebar for native folder/file creation with silent direct filesystem fallback.
-- **Human Typing Rhythm**: 15–60 WPM speed curve with flow-wave pacing, simulated typing errors with realistic backspace corrections, and customizable speed profiles.
-- **Mechanical Key Audio Engine**: Real mechanical switch sound effects for every keystroke.
-- **Focus Guard & Wake-Lock**: Ensures typing only occurs when VS Code is the active window, and prevents Windows from sleeping during multi-hour builds.
+- **Solid Dark-Graphite PySide6 Qt6 Desktop UI**: High-performance native Qt6 interface with `Fusion` styling, zero translucency/glass latency, and floating real-time QWERTY HUD.
+- **Built-in 1-Click Auto-Updater**: Automatic background release checks against GitHub Releases API.
+- **Self-Healing VS Code Editor & Cursor-Anchor Guard**: Actively monitors cursor drift, focus loss, and stray keystrokes.
+- **Visual VS Code Explorer Mode**: Human-like Explorer navigation with silent direct filesystem fallback.
+- **Human Typing Rhythm & Mechanical Audio**: 15–60 WPM flow-wave pacing, typo correction simulation, Focus Guard, and Wake-Lock.
 
 ## [1.0.0] - 2026-11-24
 
