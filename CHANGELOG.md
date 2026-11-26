@@ -2,6 +2,12 @@
 
 All notable changes to **thee_trito bot** will be documented in this file.
 
+## [1.4.0] - 2026-11-26
+
+### Added
+- **Built-In Starter Projects & Snippets Library**: Added 4 built-in multi-file starter projects and built-in single-file starter scripts accessible right from the dashboard.
+- **Continuous Built-In Loop (`Loop continuously`)**: Built-In Projects and Built-In Snippets automatically pause, clear their own typed output in VS Code, and restart continuously until stopped (`F9`, `Esc`, or **Stop**). Custom user folders and files never auto-clear.
+
 ## [1.3.2] - 2026-11-26
 
 ### Added
