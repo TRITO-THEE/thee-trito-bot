@@ -2,6 +2,15 @@
 
 All notable changes to **thee_trito bot** will be documented in this file.
 
+## [1.6.1] - 2026-11-28
+
+### Added
+- **Excel Studio Step 2 `Choose Folder` Target Picker**: Added a **`Choose Folder`** button beside **`Save As .xlsx...`** to select an output folder and automatically generate `<folder>/<source_stem>_output.xlsx` (or `thee_trito_workbook.xlsx` before picking a source), with sticky `last_excel_target_dir` persistence across source workbook switches.
+
+### Fixed
+- **Live Microsoft Excel Cell Typing**: Fixed cell selection and edit-mode pacing inside `write_cell_live_human()` so characters and Excel formulas visibly type into Excel cells, commit cleanly with `Enter`, light up the Keyboard HUD, and self-heal via COM (`.formula2` / `.value`) with `[Excel Self-Heal]` logging when needed.
+- **Instant `XLMAIN` Excel Focus Guard**: Upgraded `is_excel_focused()` on Windows via `win32gui` (`XLMAIN` window class detection and browser/editor/bot exclusions) so switching out of Excel immediately pauses typing and updates the badge to **`Paused — Waiting for Excel`** without stealing focus back.
+
 ## [1.6.0] - 2026-11-27
 
 ### Added

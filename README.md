@@ -12,14 +12,14 @@ Windows desktop auto-coding and spreadsheet automation bot for natural human-pac
 
 | Asset | Version | Size | Download |
 |---|---|---|---|
-| `thee_trito_bot_Setup.exe` | **v1.6.0** | 66.40 MB | [**Download Windows Setup Wizard**](https://github.com/TRITO-THEE/thee-trito-bot/releases/download/v1.6.0/thee_trito_bot_Setup.exe) |
+| `thee_trito_bot_Setup.exe` | **v1.6.1** | 66.41 MB | [**Download Windows Setup Wizard**](https://github.com/TRITO-THEE/thee-trito-bot/releases/download/v1.6.1/thee_trito_bot_Setup.exe) |
 
 ### Integrity Verification (SHA-256)
 Verify downloaded installer integrity in PowerShell before running:
 ```powershell
 Get-FileHash .\thee_trito_bot_Setup.exe -Algorithm SHA256
 # Expected SHA-256:
-# 3fc2c805b00687777e203a496a247b4446e9f786ee886c104f4afc821c915584
+# ab713855fe4b6d199146898aad5a85a5afd77bd58f31d0d90ade6657933dc99c
 ```
 
 ---
