@@ -2,6 +2,16 @@
 
 All notable changes to **thee_trito bot** will be documented in this file.
 
+## [1.6.0] - 2026-11-27
+
+### Added
+- **Excel Studio Mode (`Live Microsoft Excel COM` + `Fast Headless openpyxl`)**: Added a dedicated emerald-accented Excel Studio workspace with Sheet Queue preview, Excel Settings card, COM busy/Edit-Mode auto-retry (`RPC_E_CALL_REJECTED`), self-healing formula checks via `.formula2`, isolated `excel_manifest.json` & `excel_session_state.json` resume checkpoints, and CLI flags (`--excel-source`, `--excel-target`, `--excel-mode`, `--excel-dry-run`).
+- **7 Built-In Enterprise Excel Workbooks**: Added ready-to-run 3-sheet models with formulas, styling, freeze panes, and charts (`corporate_cashflow_model`, `sales_inventory_dashboard`, `student_analytics_gradebook`, `loan_amortization_model`, `accounting_ledger_statements`, `hr_payroll_register`, `project_budget_tracker`) with optional continuous loop.
+- **PC Setup Wizard Excel Detection**: Added informational `Microsoft Excel Desktop (Excel Studio)` diagnostics row (`Ready (Live COM + openpyxl)` vs `Headless Mode Only`).
+
+### Fixed
+- **Zero Mid-Run Focus Stealing (VS Code & Excel)**: Added passive `wait_until_vscode_focused()` and `wait_until_excel_focused()` polling before periodic self-heal checks, auto-saves (`Ctrl+S`), cursor re-anchoring, next-file opens, folder creation, editor cleanup, and live Excel COM cell writes. Switching to Chrome/Explorer/Notepad now pauses quietly without pulling focus away, and physical inputs in other apps are ignored by `UserInterferenceMonitor`.
+
 ## [1.5.0] - 2026-11-26
 
 ### Added
