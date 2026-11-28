@@ -2,6 +2,15 @@
 
 All notable changes to **thee_trito bot** will be documented in this file.
 
+## [1.8.0] - 2026-11-28
+
+### Added
+- **Opt-In Persistent Remote Pairing (`Pair with Admin (Remote Help)`)**: Added opt-in support pairing in **Settings -> VS Code & System** via a one-time **6-Digit Pairing Code** or a **Personal Fleet Passphrase** (fresh installs start with Remote Help **OFF**; pairing persists across restarts via local SHA-256 hash only).
+- **Transparent `Remote Linked · Disconnect` Top-Bar Badge & Activity Logging**: Paired devices always display an amber **`Remote Linked`** badge with an instant **`Disconnect`** button and record every allowlisted remote action (`START_BUILD`, `PAUSE`, `RESUME`, `STOP`, `SET_MODE`, `SET_SPEED`, `LOAD_BUILTIN_CODE`, `LOAD_BUILTIN_EXCEL`) in **Live Monitor -> Session Activity Log**.
+
+### Improved & Hardened
+- **Strict Public Client Isolation**: Compiled installers continue excluding all administrative modules and keys, with `is_frozen()` enforcement ensuring public installs stay strictly client-only.
+
 ## [1.7.0] - 2026-11-28
 
 ### Added

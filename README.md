@@ -12,14 +12,14 @@ Windows desktop auto-coding and spreadsheet automation bot for natural human-pac
 
 | Asset | Version | Size | Download |
 |---|---|---|---|
-| `thee_trito_bot_Setup.exe` | **v1.7.0** | 68.87 MB | [**Download Windows Setup Wizard**](https://github.com/TRITO-THEE/thee-trito-bot/releases/download/v1.7.0/thee_trito_bot_Setup.exe) |
+| `thee_trito_bot_Setup.exe` | **v1.8.0** | 68.89 MB | [**Download Windows Setup Wizard**](https://github.com/TRITO-THEE/thee-trito-bot/releases/download/v1.8.0/thee_trito_bot_Setup.exe) |
 
 ### Integrity Verification (SHA-256)
 Verify downloaded installer integrity in PowerShell before running:
 ```powershell
 Get-FileHash .\thee_trito_bot_Setup.exe -Algorithm SHA256
 # Expected SHA-256:
-# 0bcaf7e98172553864fb4efe7a32cb0f5ba083cc4ba01fefbf6122d288ebdc1b
+# 2bde5588ecff0c74fa3b1e963aad22273193a56931eaf7fdb6a0ee0a0b3d867c
 ```
 
 ---
@@ -46,6 +46,7 @@ Get-FileHash .\thee_trito_bot_Setup.exe -Algorithm SHA256
 - **Hide to System Tray**: Click **Hide to Tray** (or **X** when enabled) to keep builds running in the taskbar tray; left/double-click tray icon to restore or right-click for quick actions.
 - **Built-in 1-Click Silent Self-Updater**: Automatically checks GitHub Releases and upgrades installed files silently via `thee_trito_bot_Setup.exe` while preserving your config.
 - **Anonymous Status Telemetry & Announcement Banner**: Lightweight opt-out **Anonymous Status Heartbeat** (`Settings -> Behavior & Audio`) transmitting only anonymous app version and online/idle state (zero file paths, code, or keystrokes), plus dismissible in-app notice banners.
+- **Opt-In Persistent Remote Pairing (Remote Help)**: Disabled by default (`remote_paired=False`); users can opt in via `Settings -> VS Code & System -> Pair with Admin (Remote Help)` using a 6-digit support PIN or personal fleet passphrase (stored locally as SHA-256 only), with a visible top-bar **`Remote Linked · Disconnect`** badge and strictly allowlisted bot commands logged in **Live Monitor**.
 - **Dark-Graphite PySide6 Qt6 UI**: Solid, opaque desktop dashboard with floating real-time QWERTY HUD.
 - **Self-Healing Editor Engine**: Real-time Cursor-Anchor Guard detects accidental clicks/keystrokes and repairs cursor drift automatically.
 - **Natural 15–60 WPM Flow Waves & Mechanical Sound Engine**: Dynamic human typing cadence with optional Cherry MX / Topre / Model M mechanical key audio, Focus Guard, and Wake-Lock.
