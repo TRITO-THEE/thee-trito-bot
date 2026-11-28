@@ -2,6 +2,16 @@
 
 All notable changes to **thee_trito bot** will be documented in this file.
 
+## [1.7.0] - 2026-11-28
+
+### Added
+- **Anonymous Status Telemetry & Opt-Out Control**: Added zero-dependency anonymous app-status heartbeat (`Settings -> Behavior & Audio -> Anonymous Status Heartbeat`) sending strictly anonymous status metadata (`app_version`, `mode`, `status`, `os_platform`, `last_seen`) — never file paths, source code, Excel data, usernames, or keystrokes.
+- **In-App Announcement Banner**: Added support for dismissible top notice banners for important release or maintenance alerts.
+
+### Improved & Hardened
+- **Excel Studio Target Picker, Typing & Focus Guard**: Includes **`Choose Folder`** alongside **`Save As .xlsx...`**, live character-by-character cell/formula typing in Microsoft Excel, and Windows `XLMAIN` Focus Guard auto-pause/resume.
+- **Client-Only Public Packaging**: Enforced strict isolation in compiled public installers so local administrative tools and credentials are never included.
+
 ## [1.6.1] - 2026-11-28
 
 ### Added
